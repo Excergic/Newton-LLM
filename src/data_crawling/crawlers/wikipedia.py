@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 
 from crawlers.base import BaseAbstractCrawler
 
-logger = Logger(service="Newton-LLM/crawler")
+logger = Logger(service="newton-llmcrawler")
 
 
 class WikipediaCrawler(BaseAbstractCrawler):
