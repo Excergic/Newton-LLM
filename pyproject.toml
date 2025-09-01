@@ -7,5 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "aws-lambda-powertools>=3.19.0",
     "beautifulsoup4>=4.13.5",
+    "pydantic>=2.11.7",
+    "pymongo>=4.14.1",
     "selenium>=4.35.0",
 ]
