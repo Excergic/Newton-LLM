@@ -1,0 +1,53 @@
+# Wikipedia Data Source Configuration
+data_sources:
+  wikipedia:
+    enabled: true
+    schedule: "daily"
+    base_url: "https://en.wikipedia.org/w/api.php"
+    pages:
+      - "Isaac Newton"
+      - "Philosophiæ Naturalis Principia Mathematica"
+      - "Newton's laws of motion"
+      - "Opticks"
+      - "Calculus"
+      - "Isaac Newton's occult studies"
+      - "Mathematical Principles of Natural Philosophy"
+      - "Method of Fluxions"
+      - "De analysi per aequationes numero terminorum infinitas"
+      - "Leibniz–Newton calculus controversy"
+
+# Processing Configuration
+processing:
+  # HTML elements to remove during cleaning
+  remove_elements:
+    - "script"
+    - "style" 
+    - "table"
+    - "div.navbox"
+    - "div.infobox"
+    - "div.hatnote"
+    - "div.dablink"
+    - "sup.reference"
+  
+  # Text processing settings
+  min_text_length: 100
+  preserve_structure: false
+  
+# Storage Configuration  
+storage:
+  temp_directory: "/tmp/newton_data"
+  collection_name: "newton_pages"
+  keep_temp_files: true
+  
+# Airflow DAG Configuration
+dag_config:
+  owner: "newton_ai"
+  retries: 2
+  retry_delay_minutes: 5
+  schedule_interval_days: 1
+  catchup: false
+  tags:
+    - "wikipedia"
+    - "newton" 
+    - "etl"
+    - "modular"
