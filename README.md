@@ -1,6 +1,7 @@
 # Newton-LLM: AI Version of Issac Newton  
 
-<video src="/media/cursorful-video-1756904976295.mp4" width="600" controls></video>
+## Live App  
+https://newton-llm-48ychkz8x5fbutyhbfwdhb.streamlit.app/
 
 
 ## 1. Data Ingestion  
