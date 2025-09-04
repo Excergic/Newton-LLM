@@ -29,9 +29,15 @@ uv pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_U
 airflow standalone
 ```
 
-<h3 style="color:green">- Airflow UI: http://localhost:8080/ 
-(username and password will be store in .airflow/simple_auth_manager_passwords.json)
-</h3>
-<h3>apache standalone is for development only</h3>
+### Up MongoDB service with Docker
+```bash
+docker compose up -d
+```
+
+### Run DAG
+- Go to airflow ui and run DAG manually to test, it will take a while to run, it will fetch data from Wikipedia and store it in MongoDB
+
+## RAG (Retrieval Augmented Generation)
+- There are several files in RAG which contails different components of RAG pipeline as a module
 
 
