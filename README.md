@@ -1,4 +1,7 @@
-# Newton-LLM: AI Version of Issac Newton
+# Newton-LLM: AI Version of Issac Newton  
+
+<video src="/media/cursorful-video-1756904976295.mp4" width="600" controls></video>
+
 
 ## 1. Data Ingestion  
 ### - Airlfow Setup using UV  
@@ -38,6 +41,8 @@ docker compose up -d
 - Go to airflow ui and run DAG manually to test, it will take a while to run, it will fetch data from Wikipedia and store it in MongoDB
 
 ## RAG (Retrieval Augmented Generation)
-- There are several files in RAG which contails different components of RAG pipeline as a module
+- There are several files in RAG which contails different components of RAG pipeline as a module  
+
+![system design](https://raw.githubusercontent.com/Excergic/Newton-LLM/main/media/system.png)
 
 
