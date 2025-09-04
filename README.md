@@ -44,6 +44,26 @@ docker compose up -d
 ## RAG (Retrieval Augmented Generation)
 - There are several files in RAG which contails different components of RAG pipeline as a module  
 
-![system design](https://raw.githubusercontent.com/Excergic/Newton-LLM/main/media/system.png)
+![system design](https://raw.githubusercontent.com/Excergic/Newton-LLM/main/media/system.png)  
+
+## Deployment   
+
+- Containerize the app using Docker
+```bash
+docker build -t newton-llm .
+docker run -p 8000:8000 newton-llm
+```
+
+- Deploy to any hosting platform (Best if you use AWS Lambda) I have used "Render" for this project  
+
+Backend Link: https://newton-llm.onrender.com
+
+
+## Thank you for visiting my project!
+
+### Contact Me
+- [LinkedIn](www.linkedin.com/in/dhaivat-jambudia)
+- [Twitter](https://x.com/dhaivat00)
+- [GitHub](https://github.com/Excergic)
 
 
